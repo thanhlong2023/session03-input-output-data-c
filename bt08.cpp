@@ -15,11 +15,17 @@ int main()
 
     int temp = 0;
 
-    while (n)
-    {
-        temp = temp * 10 + n % 10;
-        n /= 10;
-    }
+    temp = temp * 10 + n % 10;
+    n /= 10;
+
+    temp = temp * 10 + n % 10;
+    n /= 10;
+
+    temp = temp * 10 + n % 10;
+    n /= 10;
+
+    temp = temp * 10 + n % 10;
+    n /= 10;
 
     printf("Số nghịch đảo là: %d\n", temp);
     return 0;

@@ -15,11 +15,14 @@ int main()
 
     int sum = 0;
 
-    while (n)
-    {
-        sum += n % 10;
-        n /= 10;
-    }
+    sum += n % 10;
+    n /= 10;
+    sum += n % 10;
+    n /= 10;
+    sum += n % 10;
+    n /= 10;
+    sum += n % 10;
+    n /= 10;
 
     printf("Tổng các chữ số là: %d\n", sum);
     return 0;
